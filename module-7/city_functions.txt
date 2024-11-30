@@ -1,0 +1,35 @@
+# city_functions.py
+
+############################
+
+import unittest
+import sys
+
+city_name = "a"
+country_name = "b"
+
+def city_country():
+	city_name = input("Enter a city name. Enter 'q' to quit. >")
+	if city_name == "q":
+		return
+	country_name = input("Enter a country name. Enter 'q' to quit. >")
+	if country_name == "q":
+		return
+	complete_name = str(city_name + ", " + country_name)
+	return complete_name
+
+while True:
+	returned_name = city_country()
+	if returned_name == None:
+		break
+	else:
+		print(returned_name)
+	print("")
+	while_control = input("Operation complete. Press any button to repeat or 'q' to exit. >")
+	if while_control == "q":
+		break
+	print("")
+
+
+
+

@@ -1,0 +1,10 @@
+import unittest
+from city_functions import city_country
+
+class LocationTestCase(unittest.TestCase):
+	def test_city_country(self):
+		complete_name = get_complete_name('Salvador', 'Brazil')
+		self.assertEqual(complete_name, 'Salvador, Brazil')
+
+if __name__ == '__main__':
+	unittest.main()

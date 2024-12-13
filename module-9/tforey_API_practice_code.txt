@@ -1,0 +1,12 @@
+import requests
+import json
+
+def test_API():
+	test_url = http://api.open-notify.org/astros.json
+	print(requests.get(test_url))
+
+test_API()
+
+
+
+

@@ -1,0 +1,24 @@
+import requests
+import json
+
+API_url = "https://www.dnd5eapi.co/api/classes/"
+response = requests.get(API_url)
+
+def test_API_connection():
+	API_status_code = response.status.code
+	print(API_status_code)
+
+def response_no_format():
+	JSON_table = response.json()
+	print(JSON_table)
+
+def response_w_format():
+	JSON_table = response.json()
+	for i in JSON_table:
+		print i
+
+test_API_connection()
+print("")
+response_no_format()
+print("")
+response_w_format()
